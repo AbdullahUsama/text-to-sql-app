@@ -14,7 +14,8 @@ function App() {
     console.log('Sending query:', inputText); // Debug log
     
     try {
-      const response = await fetch('http://localhost:5000/api/sql-converter', {
+      // const response = await fetch('http://localhost:5000/api/sql-converter', {
+      const response = await fetch('https://text-to-sql-app-flax.vercel.app/api/sql-converter', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
