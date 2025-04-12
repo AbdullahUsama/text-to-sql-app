@@ -4,8 +4,7 @@ require('dotenv').config();
 const Groq = require('groq-sdk');
 
 // Initialize Groq with the API key
-const groq = new Groq({ apiKey: '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' });
-
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 async function convertTextToSQL(query) {
   try {
     // Make the call to Groq API to process the query
