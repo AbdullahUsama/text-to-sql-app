@@ -102,7 +102,8 @@ async function convertTextToSQL(query) {
           content: "Here is the SQL query that corresponds to the given conditions, optimized for clarity and correctness:\n"
         }
       ],
-      model: "meta-llama/llama-4-scout-17b-16e-instruct", // Ensure you are using the right model
+    //   model: "meta-llama/llama-4-scout-17b-16e-instruct", // Ensure you are using the right model
+      model: "deepseek-r1-distill-llama-70b", // Ensure you are using the right model
       temperature: 0.5,  // Lower temperature for more deterministic and precise outputs
       max_completion_tokens: 1024, // Adjust as needed based on the expected query length
     });
