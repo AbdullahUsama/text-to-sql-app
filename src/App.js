@@ -102,7 +102,7 @@
 "use client";
 
 import React, { useState } from "react";
-import "./styles.css";
+import "./App.css"; // Import your CSS file here
 import { Copy, Check, Loader2 } from "lucide-react";
 
 export default function TextToSql() {
